@@ -1,0 +1,6 @@
+{
+  "name": "Media",
+  "description": "Media keys and the desktop music app. Spotify API playback needs Premium, so this uses the local app.",
+  "tools": ["music"],
+  "try": "Pause the music."
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Messaging",
+  "description": "Send a Telegram message, or start an email in your mail app.",
+  "tools": [
+    "messaging"
+  ],
+  "needs": {
+    "telegram_bot_token": "a Telegram bot token (TELEGRAM_BOT_TOKEN in .env)"
+  },
+  "try": "Send a Telegram message saying I am on my way."
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="12dp">
+    <TextView android:id="@+id/presence" android:text="ORION" android:textStyle="bold" />
+    <TextView android:id="@+id/last_reply" android:text="Hold to talk" />
+</LinearLayout>

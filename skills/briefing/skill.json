@@ -1,0 +1,11 @@
+{
+  "name": "Briefing",
+  "description": "Morning weather, reminders, and calendar in one go.",
+  "tools": [
+    "weather"
+  ],
+  "needs": {
+    "default_city": "your city (say \"I live in ...\")"
+  },
+  "try": "What's my morning briefing?"
+}

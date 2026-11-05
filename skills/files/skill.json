@@ -1,0 +1,6 @@
+{
+  "name": "Files",
+  "description": "Watch a folder and report new files.",
+  "tools": ["watch"],
+  "try": "Watch my downloads folder."
+}

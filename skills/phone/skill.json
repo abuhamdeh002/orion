@@ -1,0 +1,7 @@
+{
+  "name": "Phone",
+  "description": "Android extras through KDE Connect when kdeconnect-cli is installed. iPhone uses this page and a Shortcut.",
+  "tools": [],
+  "probe": "kdeconnect",
+  "try": "Pair this phone."
+}

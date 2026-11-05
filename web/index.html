@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#04050a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>ORION</title>
+    <script>
+      (function () {
+        var choice = localStorage.getItem("orion-theme") || "system";
+        if (choice === "system") choice = matchMedia("(prefers-color-scheme: dark)").matches ? "night" : "light";
+        document.documentElement.dataset.theme = choice;
+        document.documentElement.dataset.accent = localStorage.getItem("orion-accent") || "rigel";
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

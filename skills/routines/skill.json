@@ -1,0 +1,6 @@
+{
+  "name": "Routines",
+  "description": "One phrase runs a fixed sequence. Goodnight mutes the PC.",
+  "tools": ["routines"],
+  "try": "Goodnight."
+}

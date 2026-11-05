@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application android:name=".OrionApp" android:label="ORION" android:icon="@android:drawable/ic_btn_speak_now" android:supportsRtl="true">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="orion" android:host="pair" />
+            </intent-filter>
+        </activity>
+        <service android:name=".TalkService" android:exported="false" android:foregroundServiceType="microphone" />
+        <service android:name=".TalkTile" android:exported="true" android:icon="@android:drawable/ic_btn_speak_now" android:label="Talk to ORION" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".OrionWidget" android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/orion_widget" />
+        </receiver>
+        <!-- Call and SMS forwarding (CallSmsReceiver) needs READ_CALL_LOG / SMS permissions, which Google Play
+             restricts. It is off in this build; a sideload flavour can add those permissions and this receiver back. -->
+        <receiver android:name=".FindPhoneReceiver" android:exported="false" />
+    </application>
+</manifest>

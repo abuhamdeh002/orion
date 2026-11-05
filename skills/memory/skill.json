@@ -1,0 +1,8 @@
+{
+  "name": "Memory and Notes",
+  "description": "Remember facts about you and recall them later. Everything stored is on the Memory page.",
+  "tools": [
+    "memory"
+  ],
+  "try": "Remember that my sister is called Lina."
+}

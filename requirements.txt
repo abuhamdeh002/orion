@@ -1,0 +1,38 @@
+# Core
+pydantic>=2.7,<3
+pydantic-settings>=2.2,<3
+python-dotenv>=1.0,<2
+httpx>=0.27,<1
+psutil>=5.9,<8
+tzdata>=2024.1
+
+# Desktop window for the web UI (falls back to the browser without it)
+pywebview>=5,<7
+
+# Voice
+pyttsx3>=2.90
+edge-tts>=7.3.1,<8
+SpeechRecognition>=3.10
+pyaudio>=0.2.14
+faster-whisper>=1.1,<2
+kokoro-onnx>=0.4.7,<1
+sounddevice>=0.5,<1
+onnxruntime>=1.19,<2
+numpy>=1.26,<3
+pywinauto>=0.6.8,<1
+
+# Optional capabilities
+pillow>=10.0
+pytesseract>=0.3.10
+
+# Packaging
+pyinstaller>=6.0
+
+# Service
+fastapi>=0.115,<1
+uvicorn>=0.32,<1
+qrcode>=8.0,<9
+websockets>=13,<16
+pystray>=0.19,<1
+
+cryptography>=43,<47

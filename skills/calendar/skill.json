@@ -1,0 +1,9 @@
+{
+  "name": "Calendar",
+  "description": "Reads today's events from your calendar's secret ICS link (Google or Outlook). Read only.",
+  "tools": [],
+  "needs": {
+    "calendar_ics_url": "your calendar's ICS link (Settings, under Ambient)"
+  },
+  "try": "What is on my calendar today?"
+}

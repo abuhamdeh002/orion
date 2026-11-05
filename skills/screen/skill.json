@@ -1,0 +1,6 @@
+{
+  "name": "Screen Reader and Vision",
+  "description": "OCR the screen or an image, then click a named control after you confirm.",
+  "tools": ["computer", "vision"],
+  "try": "Read the text on my screen."
+}

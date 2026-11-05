@@ -1,0 +1,6 @@
+{
+  "name": "Reminders and Timers",
+  "description": "Create and list reminders.",
+  "tools": ["reminders"],
+  "try": "Remind me in 20 minutes to stretch."
+}

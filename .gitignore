@@ -1,0 +1,49 @@
+# Secrets
+.env
+.dev.vars
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local data (DB, logs, models, license, trial)
+data/
+data.backup-*/
+logs/
+*.log
+
+# Build output (keep the specs and scripts)
+dist/
+build/*
+!build/orion.spec
+!build/install.ps1
+!build/*.iss
+
+# Node / web builds
+node_modules/
+web/dist/
+cloud/*/web/dist/
+cloud/*/.wrangler/
+cloud/site/data/store.json
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+
+# Editors / OS
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini

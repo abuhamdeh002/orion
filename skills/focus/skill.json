@@ -1,0 +1,6 @@
+{
+  "name": "Focus",
+  "description": "Mutes proactive nudges while focus mode is on.",
+  "tools": ["routines"],
+  "try": "Start focus."
+}

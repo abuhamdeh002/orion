@@ -1,0 +1,6 @@
+{
+  "name": "Windows and Apps",
+  "description": "List windows, focus one, clipboard, volume, Start Menu apps.",
+  "tools": ["computer", "app_launcher"],
+  "try": "What windows are open?"
+}

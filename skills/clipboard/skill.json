@@ -1,0 +1,6 @@
+{
+  "name": "Clipboard",
+  "description": "Read or write the Windows clipboard.",
+  "tools": ["computer"],
+  "try": "What is on my clipboard?"
+}

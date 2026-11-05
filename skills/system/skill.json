@@ -1,0 +1,6 @@
+{
+  "name": "System and Power",
+  "description": "System stats, and shutdown or restart after a phone PIN.",
+  "tools": ["system_info", "power"],
+  "try": "How much memory is free?"
+}
